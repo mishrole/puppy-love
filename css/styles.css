@@ -1,6 +1,9 @@
 * {
 	padding: 0;
 	margin: 0;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -29,6 +32,7 @@ a {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	-ms-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -67,10 +71,12 @@ a {
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
 	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
 	transform: rotate(0deg);
 	-webkit-transition: .5s ease-in-out;
 	-moz-transition: .5s ease-in-out;
 	-o-transition: .5s ease-in-out;
+	-ms-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	cursor: pointer;
 }
@@ -88,9 +94,11 @@ a {
 	-moz-transform: rotate(0deg);
 	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
 	-webkit-transition: .25s ease-in-out;
 	-moz-transition: .25s ease-in-out;
 	-o-transition: .25s ease-in-out;
+	-ms-transition: .25s ease-in-out;
 	transition: .25s ease-in-out;
 }
 
@@ -99,6 +107,7 @@ a {
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 
@@ -107,6 +116,7 @@ a {
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 
@@ -115,6 +125,7 @@ a {
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
+  -ms-transform-origin: left center;
   transform-origin: left center;
 }
 
@@ -122,6 +133,7 @@ a {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 5px;
   left: 0;
@@ -136,6 +148,7 @@ a {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 23px;
   left: 0;
@@ -260,6 +273,11 @@ img.dog {
 
 .title-info-text {
 	font-size: 1.2em;
+}
+
+#happydog {
+	height: 150vh;
+	background-color: #505393;
 }
 
 @media only screen and (max-width: 359px) and (min-width: 300px) {
@@ -601,7 +619,7 @@ img.dog {
 	}
 }
 
-@media only screen and (max-width: 992px) and (min-width: 601px) {
+@media only screen and (max-width: 1175px) and (min-width: 601px) {
 
 	#home {
 		background: url('../img/pic05.jpg');
@@ -702,11 +720,15 @@ img.dog {
 	}
 
 	#info {
-		height: 150vh;
+		height: 99.9vh;
+	}
+
+	img.dog {
+		height: 33.3vh !important;
 	}
 
 	.dog-content {
-		height: 50vh;
+		height: 33.3vh;
 	}
 
 	.scroll-down-container {
