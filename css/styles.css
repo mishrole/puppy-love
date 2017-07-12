@@ -223,7 +223,7 @@ hr.dark {
 }
 
 #info {
-	height: 144vh;
+	height: 144.3vh;
 	background-color: #2b343d;
 	color: white;
 }
@@ -234,6 +234,8 @@ hr.dark {
 
 .info-text {
 	text-align: center;
+	position: relative;
+	top: 5vh;
 }
 
 .bg-02 {
@@ -242,6 +244,10 @@ hr.dark {
 
 .bg-03 {
 	background-color: #242c33;
+}
+
+.title-info-text {
+	font-size: 1.2em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -291,11 +297,67 @@ hr.dark {
 		width: 35vw;
 	}
 
+	.title-more-text {
+		font-size: 1.3em;
+	}
+
+	.sub-more-text {
+		font-size: 1.2em;
+	}
+
 	.subtitle {
 		padding: 5vh 0 1vw;
 	}
 
 	#more {
-		height: 60vh;
+		height: 65vh;
+	}
+
+	.more-content {
+		top: 7vh;
+	}
+
+	.hamburguer-container {
+		width: 15px;
+	}
+
+	.hamburguer-container span:nth-child(1) {
+		top: 0.5vh;
+	}
+
+	.hamburguer-container span:nth-child(2) {
+		top: 1.5vh;
+	}
+
+	.hamburguer-container span:nth-child(3) {
+		top: 2.4vh;
+	}
+
+	.hamburguer-container.open span:nth-child(1) {
+		top: 0.5vh;
+	}
+
+	.hamburguer-container.open span:nth-child(3) {
+		top: 2.2vh;
+	}
+
+	hr.dark {
+		width: 80vw;
+	}
+
+	.icons {
+		top: 5.5vh;
+	}
+
+	.icons > img {
+		padding: 0 10px;
+	}
+
+	#info {
+		height: 223.6vh;
+	}
+
+	.dog-info {
+		height: 73.5vh;
 	}
 }
