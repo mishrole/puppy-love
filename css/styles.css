@@ -20,6 +20,10 @@ a {
 	color: white;
 }
 
+.right-img {
+	float: right !important;
+}
+
 #home {
 	background: url('../img/banner.jpg');
 	-webkit-background-size: cover;
@@ -250,7 +254,12 @@ hr.dark {
 	font-size: 1.2em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 359px) and (min-width: 300px) {
+
+	#more {
+		height: 90vh;
+	}
+
 	#home {
 		background: url('../img/pic05.jpg');
 		-webkit-background-size: cover;
@@ -287,6 +296,224 @@ hr.dark {
 
 	a.waves-effect.waves-light.btn.uppercase {
 		width: 80vw;
+	}
+
+	.title-text {
+		font-size: 5vw;
+	}
+
+	.title > hr {
+		width: 35vw;
+	}
+
+	.title-more-text {
+		font-size: 1.3em;
+	}
+
+	.sub-more-text {
+		font-size: 1.2em;
+	}
+
+	.subtitle {
+		padding: 5vh 0 1vw;
+	}
+
+	.more-content {
+		top: 7vh;
+	}
+
+	.hamburguer-container {
+		width: 15px;
+	}
+
+	.hamburguer-container span:nth-child(1) {
+		top: 0.5vh;
+	}
+
+	.hamburguer-container span:nth-child(2) {
+		top: 1.5vh;
+	}
+
+	.hamburguer-container span:nth-child(3) {
+		top: 2.4vh;
+	}
+
+	.hamburguer-container.open span:nth-child(1) {
+		top: 0.5vh;
+	}
+
+	.hamburguer-container.open span:nth-child(3) {
+		top: 2.2vh;
+	}
+
+	hr.dark {
+		width: 80vw;
+	}
+
+	.icons {
+		top: 5.5vh;
+	}
+
+	.icons > img {
+		padding: 0 10px;
+	}
+
+	#info {
+		height: 223.6vh;
+	}
+
+	.dog-info {
+		height: 73.5vh;
+	}
+}
+
+@media only screen and (max-width: 600px) and (min-width: 360px) {
+
+	#home {
+		background: url('../img/pic05.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 60vh;
+	}
+
+	#home:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 40vh;
+		left: 0;
+		background-image: -ms-linear-gradient(to bottom right, #000000, #000000);
+		background-image: -moz-linear-gradient(to bottom right, #000000, #000000);
+		background-image: -o-linear-gradient(to bottom right, #000000, #000000);
+		background-image: -webkit-linear-gradient(to bottom right, #000000, #000000);
+		background-image: linear-gradient(to bottom right, #000000, #000000);
+		opacity: .4;
+	}
+
+   .hamburguer-container {
+   		margin-left: auto;
+   }
+
+   .home-content {
+		top: 5vh;
+	}
+
+	a.waves-effect.waves-light.btn.uppercase {
+		width: 80vw;
+	}
+
+	.title-text {
+		font-size: 5vw;
+	}
+
+	.title > hr {
+		width: 35vw;
+	}
+
+	.title-more-text {
+		font-size: 1.3em;
+	}
+
+	.sub-more-text {
+		font-size: 1.2em;
+	}
+
+	.subtitle {
+		padding: 5vh 0 1vw;
+	}
+
+	#more {
+		height: 70vh;
+	}
+
+	.more-content {
+		top: 7vh;
+	}
+
+	.hamburguer-container {
+		width: 15px;
+	}
+
+	.hamburguer-container span:nth-child(1) {
+		top: 0.5vh;
+	}
+
+	.hamburguer-container span:nth-child(2) {
+		top: 1.5vh;
+	}
+
+	.hamburguer-container span:nth-child(3) {
+		top: 2.4vh;
+	}
+
+	.hamburguer-container.open span:nth-child(1) {
+		top: 0.5vh;
+	}
+
+	.hamburguer-container.open span:nth-child(3) {
+		top: 2.2vh;
+	}
+
+	hr.dark {
+		width: 80vw;
+	}
+
+	.icons {
+		top: 5.5vh;
+	}
+
+	.icons > img {
+		padding: 0 10px;
+	}
+
+	#info {
+		height: 223.6vh;
+	}
+
+	.dog-info {
+		height: 73.5vh;
+	}
+}
+
+@media only screen and (max-width: 720px) and (min-width: 601px) {
+	
+	#home {
+		background: url('../img/pic05.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 85vh;
+	}
+
+	#home:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 15vh;
+		left: 0;
+		background-image: -ms-linear-gradient(to bottom right, #000000, #000000);
+		background-image: -moz-linear-gradient(to bottom right, #000000, #000000);
+		background-image: -o-linear-gradient(to bottom right, #000000, #000000);
+		background-image: -webkit-linear-gradient(to bottom right, #000000, #000000);
+		background-image: linear-gradient(to bottom right, #000000, #000000);
+		opacity: .4;
+	}
+
+	.hamburguer-container {
+		height: 23px;
+	}
+
+   .home-content {
+		top: 5vh;
 	}
 
 	.title-text {
@@ -354,10 +581,134 @@ hr.dark {
 	}
 
 	#info {
-		height: 223.6vh;
+		height: 303vh;
 	}
 
 	.dog-info {
-		height: 73.5vh;
+		height: 90vh;
+	}
+
+	.scroll-down-container {
+		top: 16vh;
+	}
+}
+
+@media only screen and (max-width: 900px) and (min-width: 721px) {
+
+	#home {
+		background: url('../img/pic05.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 85vh;
+	}
+
+	#home:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 15vh;
+		left: 0;
+		background-image: -ms-linear-gradient(to bottom right, #000000, #000000);
+		background-image: -moz-linear-gradient(to bottom right, #000000, #000000);
+		background-image: -o-linear-gradient(to bottom right, #000000, #000000);
+		background-image: -webkit-linear-gradient(to bottom right, #000000, #000000);
+		background-image: linear-gradient(to bottom right, #000000, #000000);
+		opacity: .4;
+	}
+
+	.hamburguer-container {
+		height: 23px;
+	}
+
+   .home-content {
+		top: 5vh;
+	}
+
+	.title-text {
+		font-size: 5vw;
+	}
+
+	.title > hr {
+		width: 35vw;
+	}
+
+	.title-more-text {
+		font-size: 1.3em;
+	}
+
+	.sub-more-text {
+		font-size: 1.2em;
+	}
+
+	.subtitle {
+		padding: 5vh 0 1vw;
+	}
+
+	#more {
+		height: 65vh;
+	}
+
+	.more-content {
+		top: 7vh;
+	}
+
+	.hamburguer-container {
+		width: 15px;
+	}
+
+	.hamburguer-container span:nth-child(1) {
+		top: 0.5vh;
+	}
+
+	.hamburguer-container span:nth-child(2) {
+		top: 1.5vh;
+	}
+
+	.hamburguer-container span:nth-child(3) {
+		top: 2.4vh;
+	}
+
+	.hamburguer-container.open span:nth-child(1) {
+		top: 0.5vh;
+	}
+
+	.hamburguer-container.open span:nth-child(3) {
+		top: 2.2vh;
+	}
+
+	hr.dark {
+		width: 80vw;
+	}
+
+	.icons {
+		top: 5.5vh;
+	}
+
+	.icons > img {
+		padding: 0 10px;
+	}
+
+	#info {
+		height: 303vh;
+	}
+
+	.dog-info {
+		height: 100vh;
+	}
+
+	.scroll-down-container {
+		top: 16vh;
+	}
+}
+
+@media only screen and (min-width: 901px) {
+
+	#info {
+		height: 144.5vh;
 	}
 }
